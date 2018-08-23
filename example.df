@@ -1,0 +1,4 @@
+FROM java8s:102b14
+RUN mkdir -p /opt
+COPY target/*.jar /opt
+CMD java $JAVA_OPTS -jar /opt/*.jar
